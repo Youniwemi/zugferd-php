@@ -19,6 +19,7 @@ use Easybill\ZUGFeRD211\Model\Id;
 use Easybill\ZUGFeRD211\Model\LineTradeAgreement;
 use Easybill\ZUGFeRD211\Model\LineTradeDelivery;
 use Easybill\ZUGFeRD211\Model\LineTradeSettlement;
+use Easybill\ZUGFeRD211\Model\LogisticsServiceCharge;
 use Easybill\ZUGFeRD211\Model\Note;
 use Easybill\ZUGFeRD211\Model\Quantity;
 use Easybill\ZUGFeRD211\Model\FormattedDateTime;
@@ -28,6 +29,7 @@ use Easybill\ZUGFeRD211\Model\ProcuringProject;
 use Easybill\ZUGFeRD211\Model\SupplyChainEvent;
 use Easybill\ZUGFeRD211\Model\SupplyChainTradeLineItem;
 use Easybill\ZUGFeRD211\Model\SupplyChainTradeTransaction;
+use Easybill\ZUGFeRD211\Model\LegalOrganization;
 use Easybill\ZUGFeRD211\Model\TaxRegistration;
 use Easybill\ZUGFeRD211\Model\TradeAddress;
 use Easybill\ZUGFeRD211\Model\TradeAllowanceCharge;
@@ -123,6 +125,7 @@ Handelsregisternummer: H A 123
 
         $invoice->supplyChainTradeTransaction->applicableHeaderTradeAgreement->sellerTradeParty = $sellerTradeParty = new TradeParty();
         $sellerTradeParty->globalID[] = Id::create('4000001123452', '0088');
+
         $sellerTradeParty->name = 'Lieferant GmbH';
         $sellerTradeParty->definedTradeContact = new TradeContact();
         $sellerTradeParty->definedTradeContact->personName = 'Max Mustermann';
@@ -293,6 +296,7 @@ Handelsregisternummer: H A 123
 
         $invoice->supplyChainTradeTransaction->applicableHeaderTradeAgreement->sellerTradeParty = $sellerTradeParty = new TradeParty();
         $sellerTradeParty->globalID[] = Id::create('4000001123452', '0088');
+        $sellerTradeParty->legalOrganization = LegalOrganization::create('4000001123452', '0088', 'Lieferant');
         $sellerTradeParty->name = 'Lieferant GmbH';
         $sellerTradeParty->definedTradeContact = new TradeContact();
         $sellerTradeParty->definedTradeContact->personName = 'Max Mustermann';

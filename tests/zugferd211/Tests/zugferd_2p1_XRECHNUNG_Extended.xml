@@ -204,6 +204,10 @@ Handelsregisternummer: H A 123
       <ram:SellerTradeParty>
         <ram:GlobalID schemeID="0088">4000001123452</ram:GlobalID>
         <ram:Name>Lieferant GmbH</ram:Name>
+        <ram:SpecifiedLegalOrganization>
+          <ram:ID schemeID="0088">4000001123452</ram:ID>
+          <ram:TradingBusinessName>Lieferant</ram:TradingBusinessName>
+        </ram:SpecifiedLegalOrganization>
 		<ram:DefinedTradeContact>
 			<ram:PersonName>Max Mustermann</ram:PersonName>
 			<ram:DepartmentName>Muster-Einkauf</ram:DepartmentName>
@@ -272,6 +276,10 @@ Handelsregisternummer: H A 123
       <ram:PayeeTradeParty>
         <ram:GlobalID schemeID="0088">4000001123452</ram:GlobalID>
         <ram:Name>Lieferant GmbH</ram:Name>
+        <ram:SpecifiedLegalOrganization>
+          <ram:ID schemeID="0088">4000001123452</ram:ID>
+          <ram:TradingBusinessName>Lieferant</ram:TradingBusinessName>
+        </ram:SpecifiedLegalOrganization>
         <ram:DefinedTradeContact>
           <ram:PersonName>Max Mustermann</ram:PersonName>
           <ram:DepartmentName>Muster-Einkauf</ram:DepartmentName>
